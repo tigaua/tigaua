@@ -1,0 +1,54 @@
+.paddingBorderMargin {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+
+  /* Padding */
+  padding: 20px;
+  padding-bottom: 10px;
+
+  /* Borders */
+  border-style: dotted;
+  border-width: 10px;
+  border-right-color: yellow;
+  border-right-width: 20px;
+
+  /* Margins */
+  margin: 10px;
+  margin-top: 20px;
+
+  /* Box sizing */
+  /* box-sizing: border-box; */
+  box-sizing: content-box;
+}
+
+.bounded {
+  background-color: yellow;
+  margin-left: 20px;
+  height: 100px;
+  width: 50%;
+  min-width: 200px;
+}
+
+.sized {
+  float: left;
+  margin-left: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.overflowVisible {
+  overflow: visible;
+}
+
+.overflowHidden {
+  overflow: hidden;
+}
+
+.overflowScroll {
+  overflow: scroll;
+}
+
+.overflowScrollY {
+  overflow-y: scroll;
+}

@@ -1,0 +1,81 @@
+.header{
+  position: fixed;
+    z-index: 2;
+    color: blue;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    background-color: pink;
+    text-align: center;
+
+
+
+
+
+}
+.subtitle{
+  position: absolute;
+      top: 25px;
+
+   right: 50;
+  float: left;
+  margin-left: 400px;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: pink;
+  color: blue;
+  text-align: center;
+
+}
+.sized {
+  float: left;
+  margin-left: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+
+.imgHeader{
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  top: 0;
+  }
+.mainDiv{
+  position:relative;
+  z-index: -1;
+  top: 50px;
+  right: 50;
+  float: left;
+  margin-left: 20%;
+  width: 500px;
+  height: 500px;
+
+}
+.image {
+  width: 100px;
+  height: 100px;
+  float: right;
+}
+.overflowScroll {
+  overflow: scroll;
+}
+.formular{
+  position:relative;
+  z-index: :-2;
+
+  top: -200px;
+
+  float: left;
+  margin-left: 20%;
+  bottom:100px;
+}

@@ -1,0 +1,27 @@
+#domManipulationHover {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin-top: 1rem;
+}
+
+.inner3 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin-top: 1rem;
+}
+
+.inner2 {
+  width: 120px;
+  height: 120px;
+  background-color: red;
+  margin-top: 1rem;
+}
+
+.inner1 {
+  width: 140px;
+  height: 140px;
+  background-color: yellow;
+  margin-top: 1rem;
+}

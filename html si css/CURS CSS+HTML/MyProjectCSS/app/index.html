@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="css/global-styles.css"/>
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+
+    <h1 class="welcome">Welcome to HTML, CSS & Javascript Intro</h1>
+
+    <h2>Css Cascading & Conflicts</h2>
+
+    <p style="color: red">Using inline styles.</p>
+
+    <div class="parentStyles">
+      <div>
+        <div>
+          <div>
+            <p>Styles inherited from <em>parent</em>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parentStyles">
+      <div>
+        <div class="childStyles">
+          <div>
+            <p>Overriding inherited styles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parentStyles">
+      <div>
+        <div class="childStyles">
+          <div>
+            <p class="elementStyles1 elementStyles2">
+              Overriding styles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parentStyles">
+      <div>
+        <div class="childStyles">
+          <div>
+            <p class="elementStyles1 elementStyles2" style="color: purple">
+              Overriding styles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parentStyles">
+      <div>
+        <div class="childStyles">
+          <div>
+            <p class="elementStyles3 elementStyles4">
+              Selector specificity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="elementStyles5 elementStyles6">!important - bad practice</p>
+
+    <p class="elementStyles5 elementStyles6" style="color: purple">!important - bad practice</p>
+
+    <h2>Css Selectors</h2>
+
+    <p id="elementId">Selector by id.</p>
+
+    <div>
+      <h5 class="groupedSelectors">Enumerating more selectors:</h5>
+      <p class="groupedSelectors">You can use the same css definition with <em>multiple selectors</em> at once by delimiting them with commans.</p>
+    </div>
+
+    <div class="nested1">
+      <h5>Nested selectors:</h5>
+      <p>You can nest multiple css selectors in order to make a much more <em>sepcific</em> selection.</p>
+    </div>
+
+    <div class="nested1">
+      <h5>Nested selectors:</h5>
+      <p class="nested2">You can nest multiple css selectors in order to make a much more <em>sepcific</em> selection.</p>
+    </div>
+
+    <h3>Pseudoselectors:</h3>
+    <p>Pseudoselectors for links:</p>
+    <a href="http://www.google.ro">Some link</a><br/>
+    <p>:checked pseudoselector:<p/>
+    <input type="checkbox"><input type="checkbox"><input type="checkbox">
+    <p class="pseudo">Demonstration of :not() pseudoselector</p>
+    <p class="pseudo pseudo2">Demonstration of :not() pseudoselector</p>
+    <p class="pseudo">Demonstration of :not() pseudoselector</p>
+    <p class="pseudo3">:after pseudoselector will add aditional content.</p>
+    <p class="pseudo4">:first-letter pseudoselector will style the first letter.</p>
+
+    <h3>Attribute selectors:</h3>
+    <input type="password"/>
+
+    <h3>Measurement units in CSS:</h3>
+    <ul class="parentStyles">
+      <li class="pxUnits">Pixel unit (px)</li>
+      <li class="millimeters">We can also use milimeter, centimeters, inches, etc...(usualy not recommanded, unless for printing)</li>
+      <li class="percentUnits">Percent units (110%) are relative to parents</li>
+      <li class="emUnits">Font size relative unit (relative to the parent font size)</li>
+      <li class="remUnits">Font size relative unit (relative to the browser font size)</li>
+      <li class="viewportUnits">Units relative to the viewport.</li>
+    </ul>
+
+    <h3>Background images:</h3>
+    <div class="smile"></div>
+
+    <h3>How to specify colors:</h3>
+    <div class="colored1"></div>
+    <div class="colored2"></div>
+    <div class="colored3"></div>
+    <div class="colored4"></div>
+
+    <p id='textFormatting'>Text formatting</p>
+
+    <p id='textFormattingShortcut'>Text formatting shortcut</p>
+
+    <p class="paragraph">
+      This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text.This is a longer text.This is a longer text. This is a longer text. This is a longer text.
+    </p>
+
+    <h3>Sizing of elements, paddings, borders & margins:</h3>
+
+    <div class="paddingBorderMargin"></div>
+    <div class="bounded"></div>
+
+    <h3>Using overflow:</h3>
+    <div class="sized">
+      <p>This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text.This is a longer text.This is a longer text. This is a longer text. This is a longer text.</p>
+    </div>
+    <div class="sized overflowVisible">
+      <p>This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text.This is a longer text.This is a longer text. This is a longer text. This is a longer text.</p>
+    </div>
+    <div class="sized overflowHidden">
+      <p>This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text.This is a longer text.This is a longer text. This is a longer text. This is a longer text.</p>
+    </div>
+    <div class="sized overflowScroll">
+      <p>This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text.This is a longer text.This is a longer text. This is a longer text. This is a longer text.</p>
+    </div>
+    <!-- <div class="sized overflowScrollY">
+      <p>This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text.This is a longer text.This is a longer text. This is a longer text. This is a longer text.</p>
+    </div> -->
+
+    <h3 class="displayPropertyTitle">The display property:</h3>
+    <p>Block:</p>
+    <ul class="blockDisplay">
+      <li>Option 1</li>
+      <li>Option 2</li>
+      <li>Option 3</li>
+    </ul>
+    <p>Inline:</p>
+    <ul class="inlineDisplay">
+      <li>Option 1</li>
+      <li>Option 2</li>
+      <li>Option 3</li>
+    </ul>
+    <p>None:</p>
+    <ul class="noneDisplay">
+      <li>Option 1</li>
+      <li>Option 2</li>
+      <li>Option 3</li>
+    </ul>
+
+    <h3>Floating:</h3>
+    <div class="floating">
+      <p><div class="smile floating"></div>This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text.This is a longer text.This is a longer text. This is a longer text. This is a longer text.   This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text.This is a longer text.This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text.This is a longer text.This is a longer text. This is a longer text. This is a longer text.
+      </p>
+    </div>
+
+    <h3>The clear property:</h3>
+    <div class="floating">
+      <h4>No clear:</h4>
+      <p><div class="smile floating"></div>This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text.</p>
+      <p>This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text.</p>
+      <h4>Clear righr:</h4>
+      <p><div class="smile floating"></div>This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text.</p>
+      <p class="cleared">This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text.</p>
+    </div>
+
+    <h3>Multiple element floating: see point with <b>"Using overflow"</b></h3>
+
+    <h3>Folating and the parent container issues:</h3>
+    <div class="floating parentContainer">
+      <p><div class="smile floating"></div>This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text.</p>
+    </div>
+    <div class="floating parentContainer parentContainerFix">
+      <p><div class="smile floating"></div>This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text. This is a longer text.This is a longer text. This is a longer text.This is a longer text.</p>
+    </div>
+
+    <div class="positioningContainer">
+      <h3>Positioning:</h3>
+      <h4>Watch out! All positioning except "fixed" are relative to the first positioned enclosing container.</h4>
+      <p>Static:</p>
+      <p>The default positioning in the browser. Block elements get staked up vertically, while inline elements horizontally.</p>
+      <div class="smile static"></div>
+      <p>Relative:</p>
+      <p>Positioning relative the the normal(static) position in the page. The space taken by the element is preserverd.</p>
+      <div class="smile relative"></div>
+      <p>Absolute:</p>
+      <div class="smile absolute"></div>
+      <p>It doesn't take into account other elements. The space of the positioned element is not preserved.</p>
+      <p>Fixed:</p>
+      <div class="smile fixed"></div>
+      <p>See at the upper rigth corner. It remains on the page when scrolling. The space of the positioned element is not preserved.</p>
+    <div>
+
+    <h3>The z-index property:</h3>
+    <div class="positioningContainer">
+      <div class="smile stacked1"></div>
+      <div class="smile stacked2"></div>
+      <div class="smile stacked3"></div>
+    </div>
+    <div class="positioningContainer">
+      <div class="smile stacked1"></div>
+      <div class="smile stacked2 onTop"></div>
+      <div class="smile stacked3"></div>
+    </div>
+
+    <br/><br/><br/><br/><br/><br/><br/><br/>
+
+  </body>
+
+</html>

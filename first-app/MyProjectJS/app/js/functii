@@ -1,0 +1,15 @@
+function addItem(){
+    var ul = document.getElementById("list");
+    var candidate = document.getElementById("Produs");
+    var li = document.createElement("li");
+    li.setAttribute('id',Produs.value);
+    li.appendChild(document.createTextNode(Produs.value));
+    ul.appendChild(li);
+}
+
+function removeItem(){
+    var ul = document.getElementById("list");
+    var candidate = document.getElementById("Produs");
+    var item = document.getElementById(Produs.value);
+    ul.removeChild(item);
+    }

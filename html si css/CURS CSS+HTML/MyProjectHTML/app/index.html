@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="css/global-styles.css"/>
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+
+    <h1 class="welcome">Welcome to HTML & CSS</h1>
+
+    <p id="paragraphId" class="mainParagraph">We express the content of our page through HTML.</p>
+
+    <h3>Unordered Lists:</h3>
+    <ul>
+      <li>Element 1</li>
+      <li>Element 2</li>
+      <li>Element 3</li>
+    </ul>
+
+    <h3>Ordered Lists:</h3>
+    <ol>
+      <li>Element 1</li>
+      <li>Element 2</li>
+      <li>Element 3</li>
+    </ol>
+
+    <h3>Description Lists(new to HTML5):</h3>
+    <dl>
+      <dt>Title 1</dt>
+      <dd>Description 1</dd>
+      <dt>Title 2</dt>
+      <dd>Description 2</dd>
+    </dl>
+
+    <h3>Links:</h3>
+    <p>We can use relative or aboslute urls.</p>
+    <ul>
+      <li><a href="http://www.google.com/" target="_blank">Link to a new tab</a></li>
+      <li><a href="/myWebPage.html">Link with absolute url</a></li>
+      <li><a href="myWebPage.html">Link with relative url</a></li>
+      <li><a href="tel:+0989898989">If mobile, you can even make a phonecall</a></li>
+    </ul>
+
+    <h3>Images:</h3>
+    <img class="smile" src="assets/img/smile.png" alt="smile"/>
+
+    <h3>Iframes:</h3>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/t2ByLmLnYJ8"></iframe>
+
+    <h3>Tables:</h3>
+    <table>
+      <caption>This is a rich table.</caption>
+      <thead>
+        <tr>
+          <th>Header 1</th>
+          <th colspan="2">Header 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Data 1</td>
+          <td>Data 2</td>
+          <td>Data 3</td>
+        </tr>
+        <tr>
+          <td>Data 2</td>
+          <td>Data 3</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Forms:</h3>
+    <form action="http://localhost:3001/doSomething" method="POST">
+
+      <label for='email'>Email : </label><br/>
+      <input id='email' name='email' type="email"/><br/><br/>
+
+      <label for='password'>Password : </label><br/>
+      <input id='password' name='password' type="password"/><br/><br/>
+
+      <label for='telephone'>Telephone : </label><br/>
+      <input id='telephone' name='telephone' type="telephone"/><br/><br/>
+
+      <label for='text'>Text : </label><br/>
+      <input id='text' name='text' type="text"/><br/><br/>
+
+      <label for='textarea'>Textarea : </label><br/>
+      <textarea id='textarea' name='textarea'></textarea><br/><br/>
+
+      <label>Radio : </label><br/>
+      <input type="radio" name="radio" value="Option1"> Option1<br/>
+      <input type="radio" name="radio" value="Option2"> Option2<br/>
+      <input type="radio" name="radio" value="Option3"> Option3<br/>
+      <br/>
+
+      <label>Checkbox 4 : </label><br/>
+      <input type="checkbox" name="checkbox" value="Option1"> Option1<br/>
+      <input type="checkbox" name="checkbox" value="Option2"> Option2<br/>
+      <input type="checkbox" name="checkbox" value="Option3"> Option3<br/>
+      <br/>
+
+      <label>Select: </label><br/>
+      <select name="select">
+        <option value="Option1">Option1</option>
+        <option value="Option2">Option2</option>
+        <option value="Option3">Option3</option>
+      </select>
+      <br/><br/>
+
+      <label>Select with grups: </label><br/>
+      <select name="selectWithGrups" size="6" multiple>
+        <optgroup label="Grup1">
+          <option value="Option1">Option1</option>
+          <option value="Option2">Option2</option>
+          <option value="Option3">Option3</option>
+        </optgroup>
+        <optgroup label="Grup2">
+          <option value="Option4">Option4</option>
+          <option value="Option5">Option5</option>
+          <option value="Option6">Option6</option>
+        </optgroup>
+        <optgroup label="Grup3">
+          <option value="Option7">Option7</option>
+          <option value="Option8">Option8</option>
+          <option value="Option9">Option9</option>
+        </optgroup>
+      </select>
+      <br/><br/>
+
+      <label>File: </label><br/>
+      <input type="file" name="file"><br/><br/>
+
+      <input type="hidden" name="hidden" value="hiddenValue"/>
+
+      <label for='date'>Date picker: </label><br/>
+      <input type="datetime-local" name="date" id="date"/><br/><br/>
+
+      <label for='number'>Numeric : </label><br/>
+      <input type="number" name="number" id="number"/><br/><br/>
+
+      <label for='slider'>Slider : </label><br/>
+      <input type="range" min="0" max="10" step="1" name="slider" id="slider"/><br/><br/>
+
+      <label for='color'>Color picker: </label><br/>
+      <input type="color" name="color" id="color"/><br/><br/>
+
+      <input type="reset"/>
+      <input type="submit"></input>
+    </form>
+
+  </body>
+
+</html>

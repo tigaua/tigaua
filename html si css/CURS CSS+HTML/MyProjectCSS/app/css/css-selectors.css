@@ -1,0 +1,53 @@
+#elementId {
+  color: green;
+}
+
+/* , acts as and */
+p.groupedSelectors, h5.groupedSelectors {
+  color: red;
+}
+
+/* Nsested selectors */
+div.nested1 em {
+  color: red;
+}
+
+/* > looks for first level children, it doesn't go deeper */
+div.nested1 > p.nested2 > em {
+  color: red;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: blue;
+}
+
+input:checked {
+  position: relative;
+  top: 1em;
+}
+
+.pseudo:not(.pseudo2) {
+  color: green;
+}
+
+.pseudo3:after {
+  content: ' Inserted content.';
+  font-weight: bold;
+}
+
+.pseudo4:first-letter {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+input[type='password'] {
+  color: red;
+}

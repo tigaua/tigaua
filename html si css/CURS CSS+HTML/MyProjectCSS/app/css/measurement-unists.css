@@ -1,0 +1,30 @@
+ul.parentStyles {
+  /* Inherit text collor from parent */
+  color: inherit;
+  font-size: 110%;
+}
+
+li.pxUnits {
+  font-size: 15px;
+}
+
+li.millimeters {
+  font-size: 4mm;
+}
+
+li.percentUnits {
+  font-size: 110%;
+}
+
+li.emUnits {
+  font-size: 1.3em;
+}
+
+li.remUnits {
+  font-size: 1.3rem;
+}
+
+li.viewportUnits {
+  /* Relative to viewport width */
+  font-size: 1vw;
+}

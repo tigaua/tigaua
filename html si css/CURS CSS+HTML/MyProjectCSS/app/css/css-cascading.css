@@ -1,0 +1,32 @@
+.parentStyles {
+  color: yellow;
+}
+
+.childStyles {
+  color: blue;
+}
+
+.elementStyles1 {
+  color: orange;
+}
+
+.elementStyles2 {
+  color: green;
+}
+
+p.elementStyles3 {
+  color: orange;
+}
+
+.elementStyles4 {
+  color: green;
+}
+
+p.elementStyles5 {
+  color: orange;
+}
+
+/* Do not use !important, it is a bad practice */
+.elementStyles6 {
+  color: green !important;
+}

@@ -1,0 +1,21 @@
+/* Selector by id */
+#textFormatting {
+  /* If not found cursive, use fantasy */
+  font-family: cursive, fantasy;
+  /* Carefull at the disctinction between em vs rem */
+  font-size: 1.2em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Same as above, but in a single line */
+#textFormattingShortcut {
+  font: italic bold 1.2em cursive;
+}
+
+.paragraph {
+  width: 20em;
+  text-indent: 2em;
+  line-height: 2em;
+  text-align: justify;
+}

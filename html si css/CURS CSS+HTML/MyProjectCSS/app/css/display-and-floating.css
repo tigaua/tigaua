@@ -1,0 +1,47 @@
+.displayPropertyTitle {
+  clear: both;
+  margin-top: 350px;
+}
+
+.blockDisplay li {
+  display: block;
+}
+
+.inlineDisplay li {
+  display: inline;
+}
+
+.noneDisplay {
+  display: none;
+}
+
+div.floating {
+  width: 50em;
+  text-align: justify;
+}
+
+div.smile.floating {
+  /* Add background-image */
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-image: url(/assets/img/smile.png);
+  margin: 20px;
+  /* Float to right */
+  float: right;
+}
+
+p.cleared {
+    clear: right;
+}
+
+.parentContainer {
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  padding: 0.5em;
+}
+
+.parentContainerFix {
+  float: left;
+}

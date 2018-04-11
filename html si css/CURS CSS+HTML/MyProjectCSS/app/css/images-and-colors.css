@@ -1,0 +1,28 @@
+div.colored1, div.colored2, div.colored3, div.colored4 {
+  width: 100px;
+  height: 100px;
+}
+
+div.colored1 {
+  background-color: red;
+}
+
+div.colored2 {
+  background-color: #008000;
+}
+
+div.colored3 {
+  /* background-color: rgb(10, 30, 255); */
+  background-color: rgb(10%, 10%, 90%);
+}
+
+div.colored4 {
+  background-image: linear-gradient(45deg, red, green, blue);
+}
+
+.smile {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-image: url(/assets/img/smile.png);
+}

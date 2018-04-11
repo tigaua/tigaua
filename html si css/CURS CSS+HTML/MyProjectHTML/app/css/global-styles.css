@@ -1,0 +1,26 @@
+.mainParagraph {
+  color: blue;
+}
+
+h1.welcome {
+  display: inline;
+  position: relative;
+}
+
+img.smile {
+  display: inline;
+  padding-left: 25px;
+  height: auto;
+  width: auto;
+  max-width: 25px;
+  max-height: 25px;
+}
+
+td, th {
+  border: 1px solid blue;
+  padding: 20px;
+}
+
+table {
+  border: 1px solid blue;
+}
